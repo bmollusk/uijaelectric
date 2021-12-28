@@ -86,8 +86,8 @@ export default function Home() {
         objectFit='contain'
         objectPosition='center'
         className='custom-img'
-        quality='100'
-        priority
+        quality='50'
+        priority={true}
       />  
       <Keypad keypad={keypad}/>
     </div>
