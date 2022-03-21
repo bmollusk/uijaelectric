@@ -7,14 +7,14 @@
 @media(orientation: portrait) {
   .bg{
     background-size: auto 85%;
-    background-color: #9c9693;
+    background-color: #d7bbbe;
   }
 }
 
 @media(orientation: landscape) {
   .bg{
     background-size: auto 100%;
-    background-color: #938f90;
+    background-color: #d7bbbe;
   }
 }
 .custom-img {
