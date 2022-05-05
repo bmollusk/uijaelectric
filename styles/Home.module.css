@@ -3,25 +3,15 @@
   
   background-position: center;
   background-repeat: no-repeat;
-}
-@media(orientation: portrait) {
-  .bg{
-    background-size: auto 85%;
-    background-color: #d7bbbe;
-  }
-}
+  
+  background-color: #d7bbbe;
 
-@media(orientation: landscape) {
-  .bg{
-    background-size: auto 100%;
-    background-color: #d7bbbe;
-  }
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .custom-img {
-  object-fit: contain;
-  width: 100% !important;
-  position: center;
-  height: unset !important;
 }
 
 .unset-img {
@@ -29,4 +19,20 @@
 }
 .unset-img > div {
   position: unset !important;
+}
+@media(max-aspect-ratio: 16/9){
+  .container {
+    margin-left: -75%; /*do negative margin*/
+    margin-right: -75%;
+  }
+}
+@media(min-aspect-ratio: 16/9){
+  .container {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+
+
+.container > span{
 }

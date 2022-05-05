@@ -96,18 +96,20 @@ export default function Home() {
 
   return (
     <div className = {styles.bg} ref={div} tabIndex='0' onKeyDown={(event)=>{frameselect(event.key)}} onKeyUp={framedeselect}>
-      <Image
-        src = {`/frames/${image}.png`}
-        layout='fill'
-        objectFit='contain'
-        objectPosition='center'
-        className='custom-img'
-        quality='50'
-        priority={true}
-      />  
-      <Keypad keypad={keypad} onMouseDown={frameselect} onMouseUp={framedeselect}/>
-      <Screen text={text}/>
-      <Stickers number={0}/>
+      <div className= {styles.container}>
+        <Image
+          src = {`/frames/${image}.png`}
+          className='custom-img'
+          quality='75'
+          priority={true}
+          height='1080'
+          width='1920'
+        />  
+        {/* <Keypad keypad={keypad} onMouseDown={frameselect} onMouseUp={framedeselect}/>
+        <Screen text={text}/> */}
+        {/* <Stickers number={0}/> */}
+      </div>
+      
     </div>
   )
 }

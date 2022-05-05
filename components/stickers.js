@@ -5,11 +5,11 @@ export default function Stickers(props) {
         ["4GH", "4RT", "5BB", "5RR", "6YG", "6VF"],
     ]
     return(
-        <div>
+        <div style={{width: "100%", position: 'absolute'}}>
             {
             Array.from(stickernames[props.number], (e,i)=>{
-            let x  = (i%2)*185 + 713
-            let y = (Math.floor(i/2))*165 + 140
+            let x  = (i%2)*185 
+            let y = (Math.floor(i/2))*165 
             return <div key = {`div sticker ${i}`} style={{position: 'absolute', left: x, top: y}}>
                     <Image key={`sticker ${i}`} src = {`/stickers/${props.number}/${i}_${e}.png`} width='200' height='200' quality='50' priority={true} />
                     {
